@@ -1,3 +1,3 @@
 DOTFILESSSSSSSSSSS
 ==================
-Stolen from [(http://github.com/thcipriani/dotfile-boilerplate) thcipriani]
+Stolen from [thcipriani](http://github.com/thcipriani/dotfile-boilerplate)
