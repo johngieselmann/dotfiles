@@ -1,7 +1,62 @@
-# PERSONAL #
-############
+#####################
+# DIRECTORY CHANGES #
+#####################
 
+# WORK
+alias gopp='cd /Users/johnG/PP/'                                #change to People Productions directory
+alias gopeople='cd /Users/johnG/PP/people'                      #change to local upsync instance
+alias gomobile='cd /Users/johnG/PP/upsyncmobile'                #change to upsync mobile 3.0
+alias golocal='cd /Users/johnG/PP/local'                        #change to local sa2
+alias goup='cd /Users/johnG/labs/upsync'                        #change to upsync
+alias gov4='cd /Users/johnG/v4/vagrant/upsync.dev'              #change to labs dev
+alias goinst='cd /Users/johnG/labs/upsync/instance'             #change to new upsync instance
+alias govag='cd /Users/johnG/PP/vagrant'                        #change to vagrant
+alias gosa2docs='cd /Users/johnG/PP/CLIENTS/Razur/docs'         #change to sa2 docs
+alias godit="cd /Users/johnG/PP/dit"                            #change to DIT testing
+alias gosa2="cd /Users/JohnG/PP/sa2"                            #change to sa2 git instance
+alias goupsync="cd /Users/JohnG/PP/upsync"                      #change to upsync git instance
+
+# PERSONAL
+alias desktop="cd /Users/johnG/Desktop"                         #go to my Desktop
+alias sites="cd /Users/johnG/Sites/"                            #go to my local sites
+alias gogies='cd /Users/johnG/Sites/giesenterprise'             #change to gieselmann enterprises
+alias gouv='cd /Users/johnG/Sites/uv/lrf'                       #change to UV cake development
+alias gomysite="cd /Users/johnG/Sites/johngieselmann_new/lrf"   #change to my current dev
+alias devtools="cd /Users/johnG/Sites/_DEV_TOOLS"               #change to my resources for development
+
+###############
+# QUICK EDITS #
+###############
+alias vimconfig='vim /Applications/MAMP/conf/apache/httpd.conf'
+alias vimbash='vim ~/.bash_profile'
+alias vimetc='sudo vim /etc/hosts'
+alias vimphp='vim /Applications/MAMP/bin/php/php5.2.17/conf/php.ini'
+
+#######
+# GIT #
+#######
+alias gpush="git push origin master"
+alias gpull="git pull origin master"
 alias gitinfo="cat .git/config"
+export UGIT="git@bitbucket.org:upsync"
+
+##########
+# RANDOM #
+##########
+alias ll="ls -AlFh" #list long
+alias node='/usr/local/bin/node'
+
+########
+# MAMP #
+########
+alias gomysql='/Applications/MAMP/Library/bin/mysql -u root --password="root"' #local MAMP db server
+alias gomysqldump='/Applications/MAMP/Library/bin/mysqldump -u root --password="root"' #local MAMP db server
+#alias gomysql='/Applications/MAMP/Library/bin/mysql'
+#export PATH=/Applications/MAMP/bin:$PATH
+#export PATH=/Applications/MAMP/Library/bin:/Users/johnG/labs/upsync/instance/app/Console:$PATH
+#export PATH=/Applications/MAMP/bin/php/php5.2.17/bin:$PATH
+
+############################################################################################################
 
 # Modified/Stolen from:
 # http://mths.be/dotfiles
