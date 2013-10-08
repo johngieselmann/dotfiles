@@ -1,3 +1,3 @@
 DOTFILESSSSSSSSSSS
 ==================
-nailed it.
+Stolen from [(http://github.com/thcipriani/dotfile-boilerplate) thcipriani]
