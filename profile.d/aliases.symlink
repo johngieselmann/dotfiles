@@ -1,3 +1,8 @@
+# PERSONAL #
+############
+
+alias gitinfo="cat .git/config"
+
 # Modified/Stolen from:
 # http://mths.be/dotfiles
 
@@ -88,3 +93,4 @@ if [[ $(uname -s) == "Darwin" ]]; then
 elif [[ $(uname -s) == "Linux" ]]; then
     source ~/.profile.linux.d/aliases
 fi
+
