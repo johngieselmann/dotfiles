@@ -38,10 +38,7 @@ alias vimalias='vim ~/.aliases'
 #######
 # GIT #
 #######
-alias gpush="git push origin master"
-alias gpull="git pull origin master"
 alias gitinfo="cat .git/config"
-export UGIT="git@bitbucket.org:upsync"
 
 ##########
 # RANDOM #
@@ -55,9 +52,6 @@ alias node='/usr/local/bin/node'
 alias gomysql='/Applications/MAMP/Library/bin/mysql -u root --password="root"' #local MAMP db server
 alias gomysqldump='/Applications/MAMP/Library/bin/mysqldump -u root --password="root"' #local MAMP db server
 #alias gomysql='/Applications/MAMP/Library/bin/mysql'
-#export PATH=/Applications/MAMP/bin:$PATH
-#export PATH=/Applications/MAMP/Library/bin:/Users/johnG/labs/upsync/instance/app/Console:$PATH
-#export PATH=/Applications/MAMP/bin/php/php5.2.17/bin:$PATH
 
 ############################################################################################################
 

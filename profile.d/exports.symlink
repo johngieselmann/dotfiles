@@ -1,3 +1,27 @@
+############
+# PERSONAL #
+############
+
+#######
+# GIT #
+#######
+export BIT="git@bitbucket.org:johngieselmann"   #git repo on bitbucket.org
+export GHUB="https://github.com/johngieselmann" #git repo on github.com
+
+#######
+# SVN #
+#######
+export SVN_EDITOR="vim"                         #launches vim to launch the task
+
+########
+# MAMP #
+########
+#export PATH=/Applications/MAMP/bin:$PATH
+#export PATH=/Applications/MAMP/Library/bin:/Users/johnG/labs/upsync/instance/app/Console:$PATH
+#export PATH=/Applications/MAMP/bin/php/php5.2.17/bin:$PATH
+
+############################################################################################################
+
 # Modified/Stolen from:
 # http://mths.be/dotfiles
 
