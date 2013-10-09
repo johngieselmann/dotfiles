@@ -23,6 +23,7 @@ alias gogies='cd /Users/johnG/Sites/giesenterprise'             #change to giese
 alias gouv='cd /Users/johnG/Sites/uv/lrf'                       #change to UV cake development
 alias gomysite="cd /Users/johnG/Sites/johngieselmann_new/lrf"   #change to my current dev
 alias devtools="cd /Users/johnG/Sites/_DEV_TOOLS"               #change to my resources for development
+alias godot="cd ~/.dotfiles"                                    #change to my dotfiles
 
 ###############
 # QUICK EDITS #
@@ -31,6 +32,8 @@ alias vimconfig='vim /Applications/MAMP/conf/apache/httpd.conf'
 alias vimbash='vim ~/.bash_profile'
 alias vimetc='sudo vim /etc/hosts'
 alias vimphp='vim /Applications/MAMP/bin/php/php5.2.17/conf/php.ini'
+alias vimrc='vim ~/.vimrc'
+alias vimalias='vim ~/.aliases'
 
 #######
 # GIT #
