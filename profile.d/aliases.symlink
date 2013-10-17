@@ -22,8 +22,9 @@ alias sites="cd /Users/johnG/Sites/"                            #go to my local 
 alias gogies='cd /Users/johnG/Sites/giesenterprise'             #change to gieselmann enterprises
 alias gouv='cd /Users/johnG/Sites/uv/lrf'                       #change to UV cake development
 alias gomysite="cd /Users/johnG/Sites/johngieselmann_new/lrf"   #change to my current dev
-alias devtools="cd /Users/johnG/Sites/_DEV_TOOLS"               #change to my resources for development
+alias tools="cd /Users/johnG/Sites/_DEV_TOOLS"                  #change to my resources for development
 alias godot="cd ~/.dotfiles"                                    #change to my dotfiles
+alias zprof=". ~/.zprofile"                                     #source the zsh_profile
 
 ###############
 # QUICK EDITS #
@@ -34,6 +35,7 @@ alias vimetc='sudo vim /etc/hosts'
 alias vimphp='vim /Applications/MAMP/bin/php/php5.2.17/conf/php.ini'
 alias vimrc='vim ~/.vimrc'
 alias vimalias='vim ~/.aliases'
+alias vimexport='vim ~/.exports'
 
 #######
 # GIT #
