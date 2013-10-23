@@ -37,6 +37,7 @@ set tabstop=4       " 4 spaces to a tab
 set shiftwidth=4    " 4 spaces for indentation
 set nowrap          " don't wrap lines
 set smartindent     " auto indent where possible
+set colorcolumn=80  " highlight text after 80 characters
 
 " code folding
 set nofoldenable        " prevent folding by default
