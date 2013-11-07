@@ -12,6 +12,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'   " Neobundle plugin  - vim plugin manager
 NeoBundle 'scrooloose/nerdtree'         " Nerdtree plugin   - file navigator
 NeoBundle 'kien/ctrlp.vim'              " Ctrlp plugin      - file finder
 
+""""""""""""""""""
 " PERSONAL SETUP "
 """"""""""""""""""
 
@@ -38,6 +39,10 @@ set shiftwidth=4    " 4 spaces for indentation
 set nowrap          " don't wrap lines
 set smartindent     " auto indent where possible
 set colorcolumn=80  " highlight text after 80 characters
+
+" text wrapping
+set wrap        " wrap text to a new line
+set linebreak   " only wrap at the breakat characters
 
 " code folding
 set nofoldenable        " prevent folding by default
