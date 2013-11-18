@@ -15,6 +15,8 @@ alias gosa2docs='cd /Users/johnG/PP/CLIENTS/Razur/docs'         #change to sa2 d
 alias godit="cd /Users/johnG/PP/dit"                            #change to DIT testing
 alias gosa2="cd /Users/JohnG/PP/sa2"                            #change to sa2 git instance
 alias goupsync="cd /Users/JohnG/PP/upsync"                      #change to upsync git instance
+alias gowiki="cd /Users/johnG/PP/wiki"                      #change to UpSync/SA2 wikis
+alias gosim="cd /Users/johnG/Library/Application\ Support/iPhone\ Simulator/"   #go to the simulator apps
 
 # PERSONAL
 alias desktop="cd /Users/johnG/Desktop"                         #go to my Desktop
@@ -41,6 +43,18 @@ alias vimexport='vim ~/.exports'
 # GIT #
 #######
 alias gitinfo="cat .git/config"
+
+###########
+# Vagrant #
+###########
+alias vbrestart="sudo /Library/StartupItems/VirtualBox/VirtualBox restart"
+
+##############
+# SAFEGUARDS #
+##############
+alias rm="rm -i"
+#alias cp="cp -i"
+alias mv="mv -i"
 
 ##########
 # RANDOM #
