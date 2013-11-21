@@ -20,6 +20,7 @@ NeoBundle 'kien/ctrlp.vim'              " Ctrlp plugin      - file finder
 syntax on
 let mapleader=','
 colorscheme desert
+set mouse=a
 
 " REMAP ARROW KEYS
 noremap <up> <nop>
@@ -38,7 +39,7 @@ set tabstop=4       " 4 spaces to a tab
 set shiftwidth=4    " 4 spaces for indentation
 set nowrap          " don't wrap lines
 set smartindent     " auto indent where possible
-set colorcolumn=80  " highlight text after 80 characters
+set colorcolumn=75  " highlight text after 75 characters
 
 " text wrapping
 set wrap        " wrap text to a new line
