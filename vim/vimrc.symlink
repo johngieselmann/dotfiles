@@ -20,7 +20,6 @@ NeoBundle 'kien/ctrlp.vim'              " Ctrlp plugin      - file finder
 syntax on
 let mapleader=','
 colorscheme desert
-set mouse=a
 
 " REMAP ARROW KEYS
 noremap <up> <nop>
