@@ -27,6 +27,7 @@ alias gomysite="cd /Users/johnG/Sites/johngieselmann_new/lrf"   #change to my cu
 alias tools="cd /Users/johnG/Sites/_DEV_TOOLS"                  #change to my resources for development
 alias godot="cd ~/.dotfiles"                                    #change to my dotfiles
 alias zprof=". ~/.zprofile"                                     #source the zsh_profile
+alias ryu="cd ~/Sites/ryu-vagrant"                              #go to my ryu vagrant box
 
 ###############
 # QUICK EDITS #

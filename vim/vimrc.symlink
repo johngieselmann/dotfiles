@@ -59,9 +59,13 @@ set relativenumber  " current line number is 0
 " misc
 set hlsearch        " highlight search results
 set laststatus=2    " status bar
+
 " mappings
 nmap <leader>t :NERDTreeToggle<CR>  " Toogle file tree  - NERDTree plugin
 nmap <leader>p :CtrlP<CR>           " Find a file       - ctrlp.vim plugin
+
+" filetype adjustments
+autocmd BufRead,BufNewFile *.less set filetype=css
 
 " CtrlP --------------------------------------------------------------- {{{
 let g:ctrlp_max_files = 0 " Set no max file limit

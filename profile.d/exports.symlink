@@ -13,6 +13,11 @@ export GHUB="https://github.com/johngieselmann" #git repo on github.com
 #######
 export SVN_EDITOR="vim"                         #launches vim to launch the task
 
+#########
+# PATHS #
+#########
+export TOOLS="/Users/johnG/Sites/_DEV_TOOLS"
+
 ########
 # MAMP #
 ########

@@ -2,6 +2,7 @@
 alias ny='telnet miku.acm.uiuc.edu'
 alias rr='curl -L http://bit.ly/10hA8iC | bash'
 alias sw='telnet towel.blinkenlights.nl'
+alias friday="curl -s https://raw.github.com/thcipriani/fridayrc/master/fridayrc | bash"
 
 if [[ $(uname -s) == "Darwin" ]]; then
     source ~/.profile.osx.d/fun
