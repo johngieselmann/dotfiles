@@ -63,6 +63,8 @@ set laststatus=2    " status bar
 " mappings
 nmap <leader>t :NERDTreeToggle<CR>  " Toogle file tree  - NERDTree plugin
 nmap <leader>p :CtrlP<CR>           " Find a file       - ctrlp.vim plugin
+nmap <leader>w <C-w>w               " Switch window in a split
+nmap <leader>r <C-w>r               " Move window right in a split
 
 " filetype adjustments
 autocmd BufRead,BufNewFile *.less set filetype=css

@@ -3,20 +3,16 @@
 #####################
 
 # WORK
-alias gopp='cd /Users/johnG/PP/'                                #change to People Productions directory
-alias gopeople='cd /Users/johnG/PP/people'                      #change to local upsync instance
-alias gomobile='cd /Users/johnG/PP/upsyncmobile'                #change to upsync mobile 3.0
-alias golocal='cd /Users/johnG/PP/local'                        #change to local sa2
-alias goup='cd /Users/johnG/labs/upsync'                        #change to upsync
-alias gov4='cd /Users/johnG/v4/vagrant/upsync.dev'              #change to labs dev
-alias goinst='cd /Users/johnG/labs/upsync/instance'             #change to new upsync instance
-alias govag='cd /Users/johnG/PP/vagrant'                        #change to vagrant
-alias gosa2docs='cd /Users/johnG/PP/CLIENTS/Razur/docs'         #change to sa2 docs
-alias godit="cd /Users/johnG/PP/dit"                            #change to DIT testing
-alias gosa2="cd /Users/JohnG/PP/sa2"                            #change to sa2 git instance
-alias goupsync="cd /Users/JohnG/PP/upsync"                      #change to upsync git instance
-alias gowiki="cd /Users/johnG/PP/wiki"                      #change to UpSync/SA2 wikis
-alias gosim="cd /Users/johnG/Library/Application\ Support/iPhone\ Simulator/"   #go to the simulator apps
+alias gopp='cd /Users/johnG/Development/'                                     #change to People Productions directory
+alias gomobile='cd /Users/johnG/Development/upsyncmobile'                     #change to upsync mobile 3.0
+alias goinst='cd /Users/johnG/labs/upsync/instance'                           #change to new upsync instance
+alias govag='cd /Users/johnG/Development/vagrant'                             #change to vagrant
+alias godit="cd /Users/johnG/Development/dit"                                 #change to DIT testing
+alias goupsync="cd /Users/JohnG/Development/upsync"                           #change to upsync git instance
+alias gowiki="cd /Users/johnG/Development/wiki"                               #change to UpSync/SA2 wikis
+alias gosim="cd /Users/johnG/Library/Application\ Support/iPhone\ Simulator/" #go to the simulator apps
+alias gosa2="cd /Users/johnG/Development/vagrant/shared/sa2"                  #change to sa2 dev
+alias gopeople="cd /Users/johnG/Development/vagrant/shared/people"            #change to people/upsync dev
 
 # PERSONAL
 alias desktop="cd /Users/johnG/Desktop"                         #go to my Desktop
