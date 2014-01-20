@@ -3,22 +3,23 @@
 #####################
 
 # WORK
-alias gopp='cd /Users/johnG/Development/'                                     #change to People Productions directory
-alias gomobile='cd /Users/johnG/Development/upsyncmobile'                     #change to upsync mobile 3.0
-alias goinst='cd /Users/johnG/labs/upsync/instance'                           #change to new upsync instance
-alias govag='cd /Users/johnG/Development/vagrant'                             #change to vagrant
+alias gopp="cd /Users/johnG/Development/"                                     #change to People Productions directory
+alias gomobile="cd /Users/johnG/Development/upsyncmobile"                     #change to upsync mobile 3.0
+alias goinst="cd /Users/johnG/labs/upsync/instance"                           #change to new upsync instance
+alias govag="cd /Users/johnG/Development/vagrant"                             #change to vagrant
 alias godit="cd /Users/johnG/Development/dit"                                 #change to DIT testing
 alias goupsync="cd /Users/JohnG/Development/upsync"                           #change to upsync git instance
 alias gowiki="cd /Users/johnG/Development/wiki"                               #change to UpSync/SA2 wikis
 alias gosim="cd /Users/johnG/Library/Application\ Support/iPhone\ Simulator/" #go to the simulator apps
 alias gosa2="cd /Users/johnG/Development/vagrant/shared/sa2"                  #change to sa2 dev
 alias gopeople="cd /Users/johnG/Development/vagrant/shared/people"            #change to people/upsync dev
+alias dev="cd ~/Development"
 
 # PERSONAL
 alias desktop="cd /Users/johnG/Desktop"                         #go to my Desktop
 alias sites="cd /Users/johnG/Sites/"                            #go to my local sites
-alias gogies='cd /Users/johnG/Sites/giesenterprise'             #change to gieselmann enterprises
-alias gouv='cd /Users/johnG/Sites/uv/lrf'                       #change to UV cake development
+alias gogies="cd /Users/johnG/Sites/giesenterprise"             #change to gieselmann enterprises
+alias gouv="cd /Users/johnG/Sites/uv/lrf"                       #change to UV cake development
 alias gomysite="cd /Users/johnG/Sites/johngieselmann_new/lrf"   #change to my current dev
 alias tools="cd /Users/johnG/Sites/_DEV_TOOLS"                  #change to my resources for development
 alias godot="cd ~/.dotfiles"                                    #change to my dotfiles
@@ -28,13 +29,13 @@ alias ryu="cd ~/Sites/ryu-vagrant"                              #go to my ryu va
 ###############
 # QUICK EDITS #
 ###############
-alias vimconfig='vim /Applications/MAMP/conf/apache/httpd.conf'
-alias vimbash='vim ~/.bash_profile'
-alias vimetc='sudo vim /etc/hosts'
-alias vimphp='vim /Applications/MAMP/bin/php/php5.2.17/conf/php.ini'
-alias vimrc='vim ~/.vimrc'
-alias vimalias='vim ~/.aliases'
-alias vimexport='vim ~/.exports'
+alias vimconfig="vim /Applications/MAMP/conf/apache/httpd.conf"
+alias vimbash="vim ~/.bash_profile"
+alias vimetc="sudo vim /etc/hosts"
+alias vimphp="vim /Applications/MAMP/bin/php/php5.2.17/conf/php.ini"
+alias vimrc="vim ~/.vimrc"
+alias vimalias="vim ~/.aliases"
+alias vimexport="vim ~/.exports"
 
 #######
 # GIT #
@@ -44,7 +45,7 @@ alias gitinfo="cat .git/config"
 ###########
 # Vagrant #
 ###########
-alias vbrestart="sudo /Library/StartupItems/VirtualBox/VirtualBox restart"
+alias vagrantrestart="sudo /Library/StartupItems/VirtualBox/VirtualBox restart"
 
 ##############
 # SAFEGUARDS #
@@ -57,7 +58,7 @@ alias mv="mv -i"
 # RANDOM #
 ##########
 alias ll="ls -AlFh" #list long
-alias node='/usr/local/bin/node'
+alias node="/usr/local/bin/node"
 
 ########
 # MAMP #
@@ -158,4 +159,3 @@ if [[ $(uname -s) == "Darwin" ]]; then
 elif [[ $(uname -s) == "Linux" ]]; then
     source ~/.profile.linux.d/aliases
 fi
-
