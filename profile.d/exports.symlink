@@ -6,7 +6,7 @@
 # GIT #
 #######
 export BIT="git@bitbucket.org:johngieselmann"   #git repo on bitbucket.org
-export GHUB="https://github.com/johngieselmann" #git repo on github.com
+export GIT="git@github.com:johngieselmann" #git repo on github.com
 
 #######
 # SVN #
@@ -16,6 +16,7 @@ export SVN_EDITOR="vim"                         #launches vim to launch the task
 #########
 # PATHS #
 #########
+export PATH="/opt/chef/embedded/bin:$PATH"   # chef workstation
 export TOOLS="/Users/johnG/Sites/_DEV_TOOLS"
 
 ########

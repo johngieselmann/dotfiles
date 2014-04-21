@@ -7,12 +7,14 @@ alias gopp="cd /Users/johnG/Development/"                                     #c
 alias gomobile="cd /Users/johnG/Development/upsyncmobile"                     #change to upsync mobile 3.0
 alias goinst="cd /Users/johnG/labs/upsync/instance"                           #change to new upsync instance
 alias govag="cd /Users/johnG/Development/vagrant"                             #change to vagrant
+alias govagdev="cd /Users/johnG/Development/vagrant-dev"                      #change to vagrant-dev
 alias godit="cd /Users/johnG/Development/dit"                                 #change to DIT testing
 alias goupsync="cd /Users/JohnG/Development/upsync"                           #change to upsync git instance
 alias gowiki="cd /Users/johnG/Development/wiki"                               #change to UpSync/SA2 wikis
 alias gosim="cd /Users/johnG/Library/Application\ Support/iPhone\ Simulator/" #go to the simulator apps
 alias gosa2="cd /Users/johnG/Development/vagrant/shared/sa2"                  #change to sa2 dev
 alias gopeople="cd /Users/johnG/Development/vagrant/shared/people"            #change to people/upsync dev
+alias gopb="cd /Users/johnG/Development/vagrant-playbooks/shared/upsync-playbooks"
 alias dev="cd ~/Development"
 
 # PERSONAL
@@ -25,6 +27,7 @@ alias tools="cd /Users/johnG/Sites/_DEV_TOOLS"                  #change to my re
 alias godot="cd ~/.dotfiles"                                    #change to my dotfiles
 alias zprof=". ~/.zprofile"                                     #source the zsh_profile
 alias ryu="cd ~/Sites/ryu-vagrant"                              #go to my ryu vagrant box
+alias ken="cd ~/Sites/ken-vagrant"                              #go to my ken vagrant box
 
 ###############
 # QUICK EDITS #
