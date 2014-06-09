@@ -217,6 +217,39 @@ function hidehidden() {
     defaults write com.apple.finder AppleShowAllFiles FALSE
 }
 
+# Add a .gitkeep file to empty directories
+function touch_empty() {
+    find . -type d -empty -print0 | xargs -0 -I{} touch {}/.gitkeep
+}
+
+# Find and replace for all files in the current directory
+function fandr() {
+    if [ -z "${1}" -o -z "${2}" ]; then
+        echo "Missing search and replace terms"
+        return 1
+    fi
+
+    echo "Find '${1}' and replace with '${2}' for all files in $(pwd) [y/N]: "
+    read go
+
+    # Only go if the user hits y, Y, Yes, yes, or YES
+    if [[ ("$go" == "y") || ("$go" == "Y") || ("$go" == "Yes") || ("$go" == "yes") || ("$go" == "YES") ]]; then
+        # set the LC_ALL for the purpose of this sed command
+        orig_lc_all=$LC_ALL
+        LC_ALL=C
+
+        # execute the command to find and replace
+        find . -type f -exec sed -i '.bak' s/"${1}"/"${2}"/g {} \;
+
+        # reset the LC_ALL value
+        LC_ALL=$orig_lc_all
+        return 0
+    else
+        echo "Not replacing, thanks anyways."
+        return 1
+    fi
+}
+
 if [[ $(uname -s) == "Darwin" ]]; then
     source ~/.profile.osx.d/functions
 elif [[ $(uname -s) == "Linux" ]]; then
