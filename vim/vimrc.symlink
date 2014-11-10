@@ -57,6 +57,7 @@ set listchars=tab:▸\ ,eol:¬
 " line numbers
 set number          " show line numbers
 set relativenumber  " current line number is 0
+autocmd BufEnter * set relativenumber
 
 " misc
 set hlsearch        " highlight search results
