@@ -4,7 +4,6 @@
 
 # WORK
 alias gopp="cd /Users/johnG/Development/"                                     #change to People Productions directory
-alias gomobile="cd /Users/johnG/Development/upsyncmobile"                     #change to upsync mobile 3.0
 alias goinst="cd /Users/johnG/labs/upsync/instance"                           #change to new upsync instance
 alias govag="cd /Users/johnG/Development/vagrant"                             #change to vagrant
 alias govagdev="cd /Users/johnG/Development/vagrant-dev"                      #change to vagrant-dev
@@ -17,6 +16,7 @@ alias gopeople="cd /Users/johnG/Development/vagrant/shared/people"            #c
 alias gopb="cd /Users/johnG/Development/vagrant-playbooks/shared/upsync-playbooks"
 alias dev="cd ~/Development"
 alias chef="cd /Users/johnG/chef-repo"
+alias zelda="cd ~/Development/vagrant-zelda"
 
 # PERSONAL
 alias desktop="cd /Users/johnG/Desktop"                         # go to my Desktop
@@ -30,6 +30,9 @@ alias godot="cd ~/.dotfiles"                                    # change to my d
 alias zprof=". ~/.zprofile"                                     # source the zsh_profile
 alias ryu="cd ~/Sites/ryu-vagrant"                              # go to my ryu vagrant box
 alias ken="cd ~/Sites/ken-vagrant"                              # go to my ken vagrant box
+
+# Codebac
+alias navi="cd ~/Sites/vagrant-navi"                            # go to the Codebac mavi vagrant box
 
 ###############
 # QUICK EDITS #
@@ -58,6 +61,7 @@ alias vagrantrestart="sudo /Library/StartupItems/VirtualBox/VirtualBox restart"
 alias rm="rm -i"
 #alias cp="cp -i"
 alias mv="mv -i"
+alias mkdir="mkdir -p"
 
 ##########
 # RANDOM #
@@ -127,7 +131,7 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 
 # Enhanced WHOIS lookups
-alias whois="whois -h whois-servers.net"
+#alias whois="whois -h whois-servers.net"
 
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"

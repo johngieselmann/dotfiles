@@ -18,14 +18,8 @@ export SVN_EDITOR="vim"                         #launches vim to launch the task
 # PATHS #
 #########
 export PATH="/opt/chef/embedded/bin:$PATH"   # chef workstation
+export PATH=~/.composer/vendor/bin:$PATH
 export TOOLS="/Users/johnG/Sites/_DEV_TOOLS"
-
-########
-# MAMP #
-########
-#export PATH=/Applications/MAMP/bin:$PATH
-#export PATH=/Applications/MAMP/Library/bin:/Users/johnG/labs/upsync/instance/app/Console:$PATH
-#export PATH=/Applications/MAMP/bin/php/php5.2.17/bin:$PATH
 
 ############################################################################################################
 
