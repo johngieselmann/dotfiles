@@ -239,7 +239,10 @@ function fandr() {
         LC_ALL=C
 
         # execute the command to find and replace
-        find . -type f -exec sed -i '.bak' s/"${1}"/"${2}"/g {} \;
+        find . -type f -exec sed -i '.fandr.bak' s/"${1}"/"${2}"/g {} \;
+
+        # now remove the backup files
+        find . -type f -name '*.fandr.bak' -exec rm -f {} \;
 
         # reset the LC_ALL value
         LC_ALL=$orig_lc_all
