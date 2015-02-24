@@ -1,16 +1,40 @@
+"""""""""""""""""""
 " NeoBundle Setup "
 """""""""""""""""""
+
+" Note: Skip initialization for vim-tiny or vim-small.
+if !1 | finish | endif
+
 if has('vim_starting')
-   set nocompatible               " Be iMproved
-   set runtimepath+=~/.vim/bundle/neobundle.vim/
+  if &compatible
+    set nocompatible               " Be iMproved
+  endif
+
+  " Required:
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+" Required:
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
+" Required:
 NeoBundleFetch 'Shougo/neobundle.vim'   " Neobundle plugin  - vim plugin manager
+
+" My Bundles here:
+" Refer to |:NeoBundle-examples|.
 NeoBundle 'scrooloose/nerdtree'         " Nerdtree plugin   - file navigator
 NeoBundle 'kien/ctrlp.vim'              " Ctrlp plugin      - file finder
+" Note: You don't set neobundle setting in .gvimrc!
+
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
 
 """"""""""""""""""
 " PERSONAL SETUP "
@@ -65,7 +89,7 @@ set laststatus=2    " status bar
 
 " mappings
 nmap <leader>t :NERDTreeToggle<CR>  " Toogle file tree  - NERDTree plugin
-nmap <leader>p :CtrlP<CR>           " Find a file       - ctrlp.vim plugin
+"nmap <leader>p :CtrlP<CR>           " Find a file       - ctrlp.vim plugin
 nmap <leader>w <C-w>w               " Switch window in a split
 nmap <leader>r <C-w>r               " Move window right in a split
 
@@ -73,13 +97,13 @@ nmap <leader>r <C-w>r               " Move window right in a split
 autocmd BufRead,BufNewFile *.less set filetype=css
 
 " CtrlP --------------------------------------------------------------- {{{
-let g:ctrlp_max_files = 0 " Set no max file limit
-let g:ctrlp_working_path_mode = 0 " Search current directory not project root
-if executable("ag")
-   set grepprg=ag\ --nogroup\ --nocolor
-       let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-   endif
-   let g:ctrlp_show_hidden = 1
+"let g:ctrlp_max_files = 0 " Set no max file limit
+"let g:ctrlp_working_path_mode = 0 " Search current directory not project root
+"if executable("ag")
+"   set grepprg=ag\ --nogroup\ --nocolor
+"       let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+"   endif
+"   let g:ctrlp_show_hidden = 1
 "}}}
 
 " Status line --------------------------------------------------------- {{{

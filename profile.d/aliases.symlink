@@ -2,21 +2,7 @@
 # DIRECTORY CHANGES #
 #####################
 
-# WORK
-alias gopp="cd /Users/johnG/Development/"                                     #change to People Productions directory
-alias goinst="cd /Users/johnG/labs/upsync/instance"                           #change to new upsync instance
-alias govag="cd /Users/johnG/Development/vagrant"                             #change to vagrant
-alias govagdev="cd /Users/johnG/Development/vagrant-dev"                      #change to vagrant-dev
-alias godit="cd /Users/johnG/Development/dit"                                 #change to DIT testing
-alias goupsync="cd /Users/JohnG/Development/upsync"                           #change to upsync git instance
-alias gowiki="cd /Users/johnG/Development/wiki"                               #change to UpSync/SA2 wikis
-alias gosim="cd /Users/johnG/Library/Application\ Support/iPhone\ Simulator/" #go to the simulator apps
-alias gosa2="cd /Users/johnG/Development/vagrant/shared/sa2"                  #change to sa2 dev
-alias gopeople="cd /Users/johnG/Development/vagrant/shared/people"            #change to people/upsync dev
-alias gopb="cd /Users/johnG/Development/vagrant-playbooks/shared/upsync-playbooks"
 alias dev="cd ~/Development"
-alias chef="cd /Users/johnG/chef-repo"
-alias zelda="cd ~/Development/vagrant-zelda"
 
 # PERSONAL
 alias desktop="cd /Users/johnG/Desktop"                         # go to my Desktop
@@ -26,10 +12,7 @@ alias gogies="cd /Users/johnG/Sites/giesenterprise"             # change to gies
 alias gouv="cd /Users/johnG/Sites/uv/lrf"                       # change to UV cake development
 alias gomysite="cd /Users/johnG/Sites/johngieselmann_new/lrf"   # change to my current dev
 alias tools="cd /Users/johnG/Sites/_DEV_TOOLS"                  # change to my resources for development
-alias godot="cd ~/.dotfiles"                                    # change to my dotfiles
-alias zprof=". ~/.zprofile"                                     # source the zsh_profile
-alias ryu="cd ~/Sites/ryu-vagrant"                              # go to my ryu vagrant box
-alias ken="cd ~/Sites/ken-vagrant"                              # go to my ken vagrant box
+alias dotfiles="cd ~/.dotfiles"
 
 # Codebac
 alias navi="cd ~/Sites/vagrant-navi"                            # go to the Codebac mavi vagrant box
@@ -37,10 +20,7 @@ alias navi="cd ~/Sites/vagrant-navi"                            # go to the Code
 ###############
 # QUICK EDITS #
 ###############
-alias vimconfig="vim /Applications/MAMP/conf/apache/httpd.conf"
-alias vimbash="vim ~/.bash_profile"
 alias vimetc="sudo vim /etc/hosts"
-alias vimphp="vim /Applications/MAMP/bin/php/php5.2.17/conf/php.ini"
 alias vimrc="vim ~/.vimrc"
 alias vimalias="vim ~/.aliases"
 alias vimexport="vim ~/.exports"
@@ -68,13 +48,6 @@ alias mkdir="mkdir -p"
 ##########
 alias ll="ls -AlFh" #list long
 alias node="/usr/local/bin/node"
-
-########
-# MAMP #
-########
-alias gomysql='/Applications/MAMP/Library/bin/mysql -u root --password="root"' #local MAMP db server
-alias gomysqldump='/Applications/MAMP/Library/bin/mysqldump -u root --password="root"' #local MAMP db server
-#alias gomysql='/Applications/MAMP/Library/bin/mysql'
 
 ############################################################################################################
 
