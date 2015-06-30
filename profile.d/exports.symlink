@@ -8,6 +8,7 @@
 export BIT="git@bitbucket.org:johngieselmann" # personal git repo on bitbucket.org
 export BITC="git@bitbucket.org:codebac"       # codebac git repo on bitbucket.org
 export GIT="git@github.com:johngieselmann"    # personal git repo on github.com
+export REPO="git@github.com:ResignationMedia" # Chive github repo
 
 #######
 # SVN #

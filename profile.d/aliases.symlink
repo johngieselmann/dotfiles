@@ -5,17 +5,20 @@
 alias dev="cd ~/Development"
 
 # PERSONAL
-alias desktop="cd /Users/johnG/Desktop"                         # go to my Desktop
-alias sites="cd /Users/johnG/Sites/"                            # go to my local sites
-alias apps="cd /Users/johnG/Apps/"                              # go to my apps
-alias gogies="cd /Users/johnG/Sites/giesenterprise"             # change to gieselmann enterprises
-alias gouv="cd /Users/johnG/Sites/uv/lrf"                       # change to UV cake development
-alias gomysite="cd /Users/johnG/Sites/johngieselmann_new/lrf"   # change to my current dev
-alias tools="cd /Users/johnG/Sites/_DEV_TOOLS"                  # change to my resources for development
+alias desktop="cd /Users/john.gieselmann/Desktop"                         # go to my Desktop
+alias sites="cd /Users/john.gieselmann/Development/"                            # go to my local sites
+alias apps="cd ~/Development/Apps"
+alias tools="cd /Users/john.gieselmann/Development/_DEV_TOOLS"                  # change to my resources for development
 alias dotfiles="cd ~/.dotfiles"
+alias homestead="cd ~/Development/Homestead"
 
 # Codebac
-alias navi="cd ~/Sites/vagrant-navi"                            # go to the Codebac mavi vagrant box
+alias navi="cd ~/Development/vagrant-navi"                            # go to the Codebac mavi vagrant box
+alias stact="cd ~/Development/stact"
+
+# theCHIVE
+alias mychive="cd ~/Development/mychive-laravel"
+alias mobileapi="cd ~/Development/mobile-api-lumen"
 
 ###############
 # QUICK EDITS #
@@ -24,6 +27,7 @@ alias vimetc="sudo vim /etc/hosts"
 alias vimrc="vim ~/.vimrc"
 alias vimalias="vim ~/.aliases"
 alias vimexport="vim ~/.exports"
+alias vimvhost="sudo vim /etc/apache2/users/john.gieselmann.conf"
 
 #######
 # GIT #
