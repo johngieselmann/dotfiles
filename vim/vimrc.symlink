@@ -90,7 +90,7 @@ set hlsearch        " highlight search results
 set laststatus=2    " status bar
 
 " filetype adjustments
-autocmd BufNewFile,BufRead *.blade.php set ft=php | set ft=html | set ft=phtml | set ft=blade " Fix blade auto-indent
+"autocmd BufNewFile,BufRead *.blade.php set ft=php | set ft=html | set ft=phtml | set ft=blade " Fix blade auto-indent
 
 " mappings
 nmap <leader>w <C-w>w               " Switch window in a split
