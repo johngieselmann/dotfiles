@@ -253,6 +253,17 @@ function fandr() {
     fi
 }
 
+function giphy() {
+
+    if [ -z "${1}" ]; then
+        echo "Missing Giphy url"
+        return 1
+    fi
+
+    curl ${1} --output ~/Desktop/giphy_"$(date +%F_%H-%M-%S)".gif
+    return 0
+}
+
 if [[ $(uname -s) == "Darwin" ]]; then
     source ~/.profile.osx.d/functions
 elif [[ $(uname -s) == "Linux" ]]; then
