@@ -8,7 +8,8 @@
 export BIT="git@bitbucket.org:johngieselmann" # personal git repo on bitbucket.org
 export BITC="git@bitbucket.org:codebac"       # codebac git repo on bitbucket.org
 export GIT="git@github.com:johngieselmann"    # personal git repo on github.com
-export REPO="git@github.com:ResignationMedia" # Chive github repo
+#export REPO="git@github.com:ResignationMedia" # Chive github repo
+export REPO="git@github.com:underarmour" # Under Armour github repo
 
 #######
 # SVN #
@@ -21,6 +22,7 @@ export SVN_EDITOR="vim"                         #launches vim to launch the task
 export PATH="/opt/chef/embedded/bin:$PATH"   # chef workstation
 export PATH=~/.composer/vendor/bin:$PATH
 export TOOLS="/Users/johnG/Sites/_DEV_TOOLS"
+export PATH="${PATH}:${HOME}/.krew/bin"
 
 ############################################################################################################
 
