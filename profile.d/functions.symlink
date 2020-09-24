@@ -259,3 +259,12 @@ elif [[ $(uname -s) == "Linux" ]]; then
     source ~/.profile.linux.d/functions
 fi
 
+# Get the Kubernetes context
+kubernetes_context() {
+   if [[ -n "$KUBECONFIG" ]]; then
+       CONTEXT="$(kubectl config current-context)"
+       if [[ -n "$CONTEXT" ]]; then
+           echo "[${CONTEXT}]"
+       fi
+   fi
+}

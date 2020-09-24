@@ -5,17 +5,22 @@
 alias dev="cd ~/Development"
 
 # PERSONAL
-alias desktop="cd /Users/johnG/Desktop"                         # go to my Desktop
-alias sites="cd /Users/johnG/Sites/"                            # go to my local sites
-alias apps="cd /Users/johnG/Apps/"                              # go to my apps
-alias gogies="cd /Users/johnG/Sites/giesenterprise"             # change to gieselmann enterprises
-alias gouv="cd /Users/johnG/Sites/uv/lrf"                       # change to UV cake development
-alias gomysite="cd /Users/johnG/Sites/johngieselmann_new/lrf"   # change to my current dev
-alias tools="cd /Users/johnG/Sites/_DEV_TOOLS"                  # change to my resources for development
+alias desktop="cd /Users/johngieselmann/Desktop"                         # go to my Desktop
+alias sites="cd /Users/johngieselmann/Sites/"                            # go to my local sites
+alias apps="cd /Users/johngieselmann/Apps/"                              # go to my apps
+alias gogies="cd /Users/johngieselmann/Sites/giesenterprise"             # change to gieselmann enterprises
+alias tools="cd /Users/johngieselmann/Sites/_DEV_TOOLS"                  # change to my resources for development
 alias dotfiles="cd ~/.dotfiles"
 
 # Codebac
 alias navi="cd ~/Sites/vagrant-navi"                            # go to the Codebac mavi vagrant box
+
+# Work
+alias goidentity="cd ~/Development/fs-identity"
+alias dropbox="cd /Users/johngieselmann/Dropbox\ \(Under\ Armour\)"
+alias mysql-prem-integ="mysql -A -h integ-premium.cnyhhfzhlyvl.us-east-1.rds.amazonaws.com -u premium_integ -p integ_payments"
+alias mysql-prem-prod="mysql -A -h prod-premium-cluster2.cluster-cnyhhfzhlyvl.us-east-1.rds.amazonaws.com -u prod_premium -p premium"
+alias gopremium="cd ~/Development/fs-premium"
 
 ###############
 # QUICK EDITS #
