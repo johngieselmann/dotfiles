@@ -1,6 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/john.gieselmann/Development/mychive-laravel/app/Http/Controllers'
-let g:netrw_dirhist_2='/Users/john.gieselmann/Development/mychive-laravel/app/Http/Controllers/User'
-let g:netrw_dirhist_3='/Users/john.gieselmann/Development/mychive-laravel/app/Http/Controllers/Auth'
-let g:netrw_dirhist_4='/Users/john.gieselmann/Development/my.thechive.dev/core/application/classes/model/mychive/user'
+let g:netrw_dirhist_cnt =0
