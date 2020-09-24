@@ -21,8 +21,8 @@ export ZSH_THEME="dpoggi"
 # export DISABLE_LS_COLORS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx git ruby gem node npm heroku cap brew cake rails redis-cli zsh-syntax-highlighting svn)
+# Example format: plugins=(rails git textmate ruby lighthouse zsh-syntax-highlighting)
+plugins=(osx git ruby gem node npm heroku brew cake redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 ##~/OH-MY-ZSH~#
