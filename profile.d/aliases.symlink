@@ -2,9 +2,8 @@
 # DIRECTORY CHANGES #
 #####################
 
-alias dev="cd ~/Development"
-
 # PERSONAL
+alias dev="cd ~/Development"
 alias desktop="cd /Users/johngieselmann/Desktop"                         # go to my Desktop
 alias sites="cd /Users/johngieselmann/Sites/"                            # go to my local sites
 alias apps="cd /Users/johngieselmann/Apps/"                              # go to my apps
@@ -12,20 +11,13 @@ alias tools="cd /Users/johngieselmann/Sites/_DEV_TOOLS"                  # chang
 alias dotfiles="cd ~/.dotfiles"
 alias homestead="cd ~/Development/Homestead"
 
-# Codebac
-alias navi="cd ~/Development/vagrant-navi"                            # go to the Codebac mavi vagrant box
-alias stact="cd ~/Development/stact"
-
-# theCHIVE
-alias mychive="cd ~/Development/mychive-laravel"
-alias mobileapi="cd ~/Development/mobile-api-lumen"
-
 # Work
 alias goidentity="cd ~/Development/fs-identity"
 alias dropbox="cd /Users/johngieselmann/Dropbox\ \(Under\ Armour\)"
 alias mysql-prem-integ="mysql -A -h integ-premium.cnyhhfzhlyvl.us-east-1.rds.amazonaws.com -u premium_integ -p integ_payments"
 alias mysql-prem-prod="mysql -A -h prod-premium-cluster2.cluster-cnyhhfzhlyvl.us-east-1.rds.amazonaws.com -u prod_premium -p premium"
 alias gopremium="cd ~/Development/fs-premium"
+alias gobolt="cd ~/Development/fs-bolt"
 
 ###############
 # QUICK EDITS #
@@ -40,6 +32,14 @@ alias vimvhost="sudo vim /etc/apache2/users/john.gieselmann.conf"
 # GIT #
 #######
 alias gitinfo="cat .git/config"
+alias gs="git status"
+alias gc="git commit"
+
+##########
+# Python #
+##########
+alias python="python3"
+alias pip="pip3"
 
 ###########
 # Vagrant #

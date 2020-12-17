@@ -23,6 +23,10 @@ export PATH="/opt/chef/embedded/bin:$PATH"   # chef workstation
 export PATH=~/.composer/vendor/bin:$PATH
 export TOOLS="/Users/johnG/Sites/_DEV_TOOLS"
 export PATH="${PATH}:${HOME}/.krew/bin"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
