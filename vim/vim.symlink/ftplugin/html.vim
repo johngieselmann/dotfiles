@@ -3,5 +3,5 @@
 """"""""""""""
 
 " tabbing, spacing, and nesting
-set tabstop=4       " 4 spaces to a tab
-set shiftwidth=4    " 4 spaces for indentation
+set tabstop=2       " 2 spaces to a tab
+set shiftwidth=2    " 2 spaces for indentation

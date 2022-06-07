@@ -1,6 +1,6 @@
 [user]
-    name = John Gieselmann
-    email = john.gieselmann@gmail.com
+	name = John Gieselmann
+	email = john.gieselmann@gmail.com
 [alias]
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
@@ -68,3 +68,5 @@
 	helper = osxkeychain
 [init]
 	defaultBranch = main
+[pull]
+	rebase = false

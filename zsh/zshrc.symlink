@@ -22,7 +22,7 @@ export ZSH_THEME="dpoggi"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse zsh-syntax-highlighting)
-plugins=(osx git ruby gem node npm heroku brew cake redis-cli)
+plugins=(macos git ruby gem node npm heroku brew cake redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 ##~/OH-MY-ZSH~#
@@ -37,3 +37,4 @@ for file in ~/.{exports,aliases,functions,fun,extra}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
+
