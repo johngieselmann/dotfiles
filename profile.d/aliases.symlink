@@ -2,20 +2,13 @@
 # DIRECTORY CHANGES #
 #####################
 
-# PERSONAL
+# Navigation
 alias dev="cd ~/Development"
-alias desktop="cd /Users/johngieselmann/Desktop"                         # go to my Desktop
-alias sites="cd /Users/johngieselmann/Sites/"                            # go to my local sites
-alias apps="cd /Users/johngieselmann/Apps/"                              # go to my apps
-alias tools="cd /Users/johngieselmann/Sites/_DEV_TOOLS"                  # change to my resources for development
+alias desktop="cd /Users/john.gieselmann/Desktop"                         # go to my Desktop
+alias apps="cd /Users/john.gieselmann/Apps/"                              # go to my apps
 alias dotfiles="cd ~/.dotfiles"
-alias homestead="cd ~/Development/Homestead"
 
-# Work
 alias goidentity="cd ~/Development/fs-identity"
-alias dropbox="cd /Users/johngieselmann/Dropbox\ \(Under\ Armour\)"
-alias mysql-prem-integ="mysql -A -h integ-premium.cnyhhfzhlyvl.us-east-1.rds.amazonaws.com -u premium_integ -p integ_payments"
-alias mysql-prem-prod="mysql -A -h prod-premium-cluster2.cluster-cnyhhfzhlyvl.us-east-1.rds.amazonaws.com -u prod_premium -p premium"
 alias gopremium="cd ~/Development/fs-premium"
 alias gobolt="cd ~/Development/fs-bolt"
 
@@ -40,11 +33,6 @@ alias gc="git commit"
 ##########
 alias python="python3"
 alias pip="pip3"
-
-###########
-# Vagrant #
-###########
-alias vagrantrestart="sudo /Library/StartupItems/VirtualBox/VirtualBox restart"
 
 ##############
 # SAFEGUARDS #

@@ -8,30 +8,19 @@
 export BIT="git@bitbucket.org:johngieselmann" # personal git repo on bitbucket.org
 export BITC="git@bitbucket.org:codebac"       # codebac git repo on bitbucket.org
 export GIT="git@github.com:johngieselmann"    # personal git repo on github.com
-#export REPO="git@github.com:ResignationMedia" # Chive github repo
-export REPO="git@github.com:underarmour"      # Under Armour github repo
-
-#######
-# SVN #
-#######
-export SVN_EDITOR="vim"                         #launches vim to launch the task
+export REPO="git@github.com:myfitnesspal"     # MFP repo
 
 #########
 # PATHS #
 #########
-export PATH="/opt/chef/embedded/bin:$PATH"   # chef workstation
 export PATH=~/.composer/vendor/bin:$PATH
-export TOOLS="/Users/johnG/Sites/_DEV_TOOLS"
 export PATH="${PATH}:${HOME}/.krew/bin"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
-############################################################################################################
+################################################################################
 
 # Modified/Stolen from:
 # http://mths.be/dotfiles
@@ -67,3 +56,14 @@ if [[ $(uname -s) == "Darwin" ]]; then
 elif [[ $(uname -s) == "Linux" ]]; then
     source ~/.profile.linux.d/exports
 fi
+
+# Work
+################################################################################
+
+# Vault
+export VAULT_ADDR="https://vault.mfp.dev"
+
+# jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
