@@ -11,6 +11,7 @@ alias dotfiles="cd ~/.dotfiles"
 alias goidentity="cd ~/Development/fs-identity"
 alias gopremium="cd ~/Development/fs-premium"
 alias gobolt="cd ~/Development/fs-bolt"
+alias gowebmain="cd ~/Development/web-main"
 
 ###############
 # QUICK EDITS #

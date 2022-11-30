@@ -279,3 +279,71 @@ kubernetes_context() {
        fi
    fi
 }
+
+# usage: deploy <target_env?>
+# examples:
+# `deploy egaba` - deploys current branch to egaba env
+# `deploy` - deploys current branch to default target env (if defined)
+deploy() {
+  if [[ ! ${PWD##*/} =~ web-main$ ]]; then
+    echo "[deploy] Error: You must run this within the web-main repo."
+    return
+  fi
+
+  local NORMALIZED_BRANCH_NAME=$(git branch --show-current | sed 's/\//_/g' | tr '[:upper:]' '[:lower:]')
+  local TARGET_ENVIRONMENT="jgieselmann" # ADD YOUR ENV NAME HERE
+
+  if [[ $TARGET_ENVIRONMENT == "" ]]; then
+    echo "[deploy] Warning: Default TARGET_ENVIRONMENT missing."
+  fi
+
+  if [ -n "$1" ]; then
+    TARGET_ENVIRONMENT="$1"
+  fi
+
+  if [[ $TARGET_ENVIRONMENT == "" ]]; then
+    echo "[deploy] Error: Unknown deployment target. Usage: deploy <environment>"
+    return
+  fi
+
+  echo "[deploy] Deploying branch '$NORMALIZED_BRANCH_NAME' to '$TARGET_ENVIRONMENT'"
+
+  if [[ $NORMALIZED_BRANCH_NAME == "main" ]]; then
+    echo "[deploy] Running command: flux create image policy $TARGET_ENVIRONMENT-web-main --image-ref=web-main --select-semver=\">=3.0.0\" --filter-regex=\"v(?P<semver>\d+\.\d+\.\d+)_main$\" --filter-extract='\$semver'"
+    flux create image policy $TARGET_ENVIRONMENT-web-main \
+      --image-ref=web-main --select-semver=">=3.0.0" --filter-regex="v(?P<semver>\d+\.\d+\.\d+)_main$" --filter-extract='$semver'
+  else
+    echo "[deploy] Running command: flux create image policy $TARGET_ENVIRONMENT-web-main --image-ref=web-main --select-alpha=asc --filter-regex=\"^${NORMALIZED_BRANCH_NAME}_\w+_(?P<timestamp>\d+)$\" --filter-extract='\$timestamp'"
+    flux create image policy $TARGET_ENVIRONMENT-web-main \
+      --image-ref=web-main --select-alpha=asc --filter-regex="^${NORMALIZED_BRANCH_NAME}_\w+_(?P<timestamp>\d+)$" --filter-extract='$timestamp'
+  fi
+
+  echo "[deploy] Running command: flux get image policy $TARGET_ENVIRONMENT-web-main"
+  flux get image policy $TARGET_ENVIRONMENT-web-main
+}
+
+# usage: suspend_automation <target_env?>
+# pauses automation on an environment so that new gcr images aren't picked up by Flux automatically
+suspend_automation() {
+  local TARGET_ENVIRONMENT="jgieselmann" # ADD YOUR ENV NAME HERE
+
+  if [ -n "$1" ]; then
+    TARGET_ENVIRONMENT="$1"
+  fi
+
+  echo "[suspend_automation] Running command: flux suspend image repository $TARGET_ENVIRONMENT-web-main"
+  flux suspend image repository $TARGET_ENVIRONMENT-web-main
+}
+
+# usage: resume_automation <target_env?>
+# resumes automation on an environment
+resume_automation() {
+  local TARGET_ENVIRONMENT="jgieselmann" # ADD YOUR ENV NAME HERE
+
+  if [ -n "$1" ]; then
+    TARGET_ENVIRONMENT="$1"
+  fi
+
+  echo "[resume_automation] Running command: flux resume image repository $TARGET_ENVIRONMENT-web-main"
+  flux resume image repository $TARGET_ENVIRONMENT-web-main
+}

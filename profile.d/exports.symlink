@@ -67,3 +67,6 @@ export VAULT_ADDR="https://vault.mfp.dev"
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
+# Kubernetes
+export KUBERNETES_ADMIN=true
+export FLUX_FORWARD_NAMESPACE=nutrition-prod
